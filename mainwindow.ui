@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>776</width>
+    <height>560</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FabWriter</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Resources/Resources.qrc">
+    <normaloff>:/new/prefix1/Logo.png</normaloff>:/new/prefix1/Logo.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="btnMenu">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>68</width>
+      <height>68</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="Resources/Resources.qrc">
+      <normaloff>:/new/prefix1/Logo.png</normaloff>:/new/prefix1/Logo.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>67</width>
+      <height>67</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbFuente">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>40</y>
+      <width>52</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Fuente:</string>
+    </property>
+   </widget>
+   <widget class="QFontComboBox" name="cbFont">
+    <property name="geometry">
+     <rect>
+      <x>201</x>
+      <y>33</y>
+      <width>182</width>
+      <height>27</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbTam">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>40</y>
+      <width>58</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Tamaño </string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="sbTam">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>33</y>
+      <width>53</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>200</number>
+    </property>
+    <property name="singleStep">
+     <number>2</number>
+    </property>
+    <property name="value">
+     <number>12</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnCut">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>30</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="toolTipDuration">
+     <number>-1</number>
+    </property>
+    <property name="whatsThis">
+     <string/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="Resources/Resources.qrc">
+      <normaloff>:/new/prefix1/cut.png</normaloff>:/new/prefix1/cut.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>33</width>
+      <height>33</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnNuevo">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>90</y>
+      <width>77</width>
+      <height>65</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="Resources/Resources.qrc">
+      <normaloff>:/new/prefix1/btnNuevo.png</normaloff>:/new/prefix1/btnNuevo.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>55</width>
+      <height>55</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnAbrir">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>94</y>
+      <width>77</width>
+      <height>65</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="Resources/Resources.qrc">
+      <normaloff>:/new/prefix1/btnAbrir.png</normaloff>:/new/prefix1/btnAbrir.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>55</width>
+      <height>55</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnGuardar">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>161</y>
+      <width>77</width>
+      <height>65</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="Resources/Resources.qrc">
+      <normaloff>:/new/prefix1/btnGuardar.png</normaloff>:/new/prefix1/btnGuardar.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>55</width>
+      <height>55</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnGuardarComo">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>161</y>
+      <width>77</width>
+      <height>65</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="Resources/Resources.qrc">
+      <normaloff>:/new/prefix1/btnGuardarComo.png</normaloff>:/new/prefix1/btnGuardarComo.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>55</width>
+      <height>55</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbCorrector">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>252</y>
+      <width>69</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Corrector:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cbPalabras">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>275</y>
+      <width>161</width>
+      <height>27</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnOmitir">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>483</y>
+      <width>52</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="Resources/Resources.qrc">
+      <normaloff>:/new/prefix1/btnOmitir.png</normaloff>:/new/prefix1/btnOmitir.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnAgregar">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>480</y>
+      <width>52</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="Resources/Resources.qrc">
+      <normaloff>:/new/prefix1/btnAgregar.png</normaloff>:/new/prefix1/btnAgregar.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbErrores">
+    <property name="geometry">
+     <rect>
+      <x>628</x>
+      <y>540</y>
+      <width>57</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Errores: </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbCantErrores">
+    <property name="geometry">
+     <rect>
+      <x>723</x>
+      <y>540</y>
+      <width>17</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="lwSug">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>320</y>
+      <width>161</width>
+      <height>161</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="txtPag">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>761</width>
+      <height>451</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbPalabrasW">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>540</y>
+      <width>67</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Palabras:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbCPalabras">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>540</y>
+      <width>91</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnCopy">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>30</y>
+      <width>35</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="Resources/Resources.qrc">
+      <normaloff>:/new/prefix1/copiar.png</normaloff>:/new/prefix1/copiar.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>33</width>
+      <height>33</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnPaste">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>30</y>
+      <width>35</width>
+      <height>37</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="Resources/Resources.qrc">
+      <normaloff>:/new/prefix1/pegar.png</normaloff>:/new/prefix1/pegar.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>33</width>
+      <height>33</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnLoad">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>252</y>
+      <width>23</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="Resources/Resources.qrc">
+      <normaloff>:/new/prefix1/reload.png</normaloff>:/new/prefix1/reload.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <zorder>btnLoad</zorder>
+   <zorder>btnGuardar</zorder>
+   <zorder>btnAbrir</zorder>
+   <zorder>btnNuevo</zorder>
+   <zorder>btnMenu</zorder>
+   <zorder>cbFont</zorder>
+   <zorder>sbTam</zorder>
+   <zorder>btnCut</zorder>
+   <zorder>lbErrores</zorder>
+   <zorder>lbCantErrores</zorder>
+   <zorder>cbPalabras</zorder>
+   <zorder>lbCorrector</zorder>
+   <zorder>lbFuente</zorder>
+   <zorder>lbTam</zorder>
+   <zorder>btnOmitir</zorder>
+   <zorder>btnAgregar</zorder>
+   <zorder>btnGuardarComo</zorder>
+   <zorder>lwSug</zorder>
+   <zorder>lbPalabrasW</zorder>
+   <zorder>lbCPalabras</zorder>
+   <zorder>btnCopy</zorder>
+   <zorder>btnPaste</zorder>
+   <zorder>txtPag</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>776</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="Resources/Resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>btnCut</sender>
+   <signal>clicked()</signal>
+   <receiver>txtPag</receiver>
+   <slot>cut()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>614</x>
+     <y>89</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>644</x>
+     <y>139</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnCopy</sender>
+   <signal>clicked()</signal>
+   <receiver>txtPag</receiver>
+   <slot>copy()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>674</x>
+     <y>89</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>696</x>
+     <y>144</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnPaste</sender>
+   <signal>clicked()</signal>
+   <receiver>txtPag</receiver>
+   <slot>paste()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>734</x>
+     <y>91</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>744</x>
+     <y>129</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnGuardarComo</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>guardarComo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>143</x>
+     <y>222</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>204</x>
+     <y>259</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnGuardar</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>guardar()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>50</x>
+     <y>231</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>90</x>
+     <y>261</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnAbrir</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>abrir()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>149</x>
+     <y>136</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>205</x>
+     <y>136</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnNuevo</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>nuevo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>64</x>
+     <y>139</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>158</x>
+     <y>96</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnLoad</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>reload()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>160</x>
+     <y>289</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>214</x>
+     <y>289</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnMenu</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>reload()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>58</x>
+     <y>62</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>125</x>
+     <y>58</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>abrir()</slot>
+  <slot>guardarComo()</slot>
+  <slot>guardar()</slot>
+  <slot>nuevo()</slot>
+  <slot>reload()</slot>
+ </slots>
+</ui>

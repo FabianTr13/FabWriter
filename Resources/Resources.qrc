@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>Resources.qrc</file>
+        <file>btnAbrir.png</file>
+        <file>btnGuardar.png</file>
+        <file>btnGuardarComo.png</file>
+        <file>btnNuevo.png</file>
+        <file>Logo.png</file>
+        <file>btnAgregar.png</file>
+        <file>btnOmitir.png</file>
+        <file>copiar.png</file>
+        <file>cut.png</file>
+        <file>pegar.png</file>
+        <file>reload.png</file>
+    </qresource>
+</RCC>
